@@ -14,18 +14,23 @@
         .label-text { font-weight: bold; font-size: 14pt; border-bottom: 1px solid #000; display: inline-block; margin-bottom: 20px; }
         .footer-date { margin-top: 20px; font-size: 20pt; }
         .nam{display: inline-block;  font-size: 15pt; font-weight: bold; margin-bottom: 10px;  }
-        .logo{ padding: 10px 20px;}
-        /* .logo img{ width: 250px; height: auto;} */ 
-        .report-info {font-size: 16pt; text-align: left; margin-bottom: 8px; margin-left: 45px;}
+        .logo {
+            padding: 10px 20px;
+        }
+        .report-info {
+            font-size: 16pt;
+            text-align: left;
+            margin-bottom: 8px;
+            margin-left: 45px;
+        }
     </style>
 </head>
 <body>
 
-    
     <div class="border-box">
         <div class="text-center">
             <div class="uni-name">Sylhet International University</div>
-            <div class="logo"><img src="/public/image/Siu.png" alt="University Logo"></div> 
+            <div class="logo"><img src="{{ public_path('image/Siu.png') }}" alt="University Logo"></div>
             <div class="dept-head">Department Of {{ $dept_name }}</div>
             
             <div class="task-box">

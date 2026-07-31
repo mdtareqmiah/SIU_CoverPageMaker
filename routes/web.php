@@ -4,7 +4,7 @@ use App\Http\Controllers\CoverPageMakerController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('layout');
+    return view('home');
 })->name('home');
 
 Route::get('/form-page', [CoverPageMakerController::class, 'index'])

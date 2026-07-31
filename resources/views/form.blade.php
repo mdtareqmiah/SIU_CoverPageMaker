@@ -133,23 +133,24 @@
     </div>
 </div>
 
-<script>
-    // Task Type Toggle
-    document.getElementById('task_type').addEventListener('change', function() {
-        var value = this.value;
-        var assignDiv = document.getElementById('assignment_fields');
-        var labDiv = document.getElementById('lab_report_fields');
+@push('scripts')
+    <script>
+        document.getElementById('task_type').addEventListener('change', function () {
+            var value = this.value;
+            var assignDiv = document.getElementById('assignment_fields');
+            var labDiv = document.getElementById('lab_report_fields');
 
-        if (value === 'Assignment') {
-            assignDiv.style.display = 'block';
-            labDiv.style.display = 'none';
-        } else if (value === 'Lab Report') {
-            assignDiv.style.display = 'none';
-            labDiv.style.display = 'block';
-        } else {
-            assignDiv.style.display = 'none';
-            labDiv.style.display = 'none';
-        }
-    });
-</script>
+            if (value === 'Assignment') {
+                assignDiv.style.display = 'block';
+                labDiv.style.display = 'none';
+            } else if (value === 'Lab Report') {
+                assignDiv.style.display = 'none';
+                labDiv.style.display = 'block';
+            } else {
+                assignDiv.style.display = 'none';
+                labDiv.style.display = 'none';
+            }
+        });
+    </script>
+@endpush
 @endsection

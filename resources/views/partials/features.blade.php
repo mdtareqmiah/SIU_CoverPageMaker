@@ -1,35 +1,50 @@
-<div class="container my-5">
-    <div class="row text-center g-4">
-        <h2 class="mb-4 fw-bold text-primary">Why Use This Generator?</h2>
-
-        <div class="col-md-4 col-sm-6">
-            <div class="card h-100 shadow border-0 feature-card">
-                <div class="card-body p-4">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3616/3616223.png" width="60" class="mb-3" alt="Fast">
-                    <h5 class="fw-bold">Fast Generation</h5>
-                    <p class="text-muted small">Just fill in the info and click generate. Your PDF is ready instantly!</p>
-                </div>
-            </div>
+<section class="feature-section" id="about" aria-labelledby="features-heading">
+    <div class="container">
+        <div class="section-intro text-center">
+            <p class="section-kicker">Why choose us</p>
+            <h2 id="features-heading">Designed for academic efficiency</h2>
         </div>
 
-        <div class="col-md-4 col-sm-6">
-            <div class="card h-100 shadow border-0 feature-card">
-                <div class="card-body p-4">
-                    <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="60" class="mb-3" alt="Standard">
-                    <h5 class="fw-bold">Standard SIU Format</h5>
-                    <p class="text-muted small">Designed strictly following the Sylhet International University layout.</p>
-                </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-xl-3">
+                <article class="feature-card">
+                    <div class="feature-icon feature-icon-fast">
+                        <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
+                    </div>
+                    <h3>Fast</h3>
+                    <p>Generate polished cover pages in seconds with a lightweight, streamlined workflow.</p>
+                </article>
             </div>
-        </div>
 
-        <div class="col-md-4 col-sm-12">
-            <div class="card h-100 shadow border-0 feature-card">
-                <div class="card-body p-4">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1865/1865273.png" width="60" class="mb-3" alt="Mobile">
-                    <h5 class="fw-bold">Mobile Friendly</h5>
-                    <p class="text-muted small">Generate and download your cover page directly from your phone anytime.</p>
-                </div>
+            <div class="col-md-6 col-xl-3">
+                <article class="feature-card">
+                    <div class="feature-icon feature-icon-academic">
+                        <i class="bi bi-mortarboard-fill" aria-hidden="true"></i>
+                    </div>
+                    <h3>University Standard</h3>
+                    <p>Built around the academic formatting expectations of Sylhet International University.</p>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <article class="feature-card">
+                    <div class="feature-icon feature-icon-pdf">
+                        <i class="bi bi-file-earmark-pdf-fill" aria-hidden="true"></i>
+                    </div>
+                    <h3>Professional PDF</h3>
+                    <p>Export a clean, readable cover page that looks consistent and presentation ready.</p>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <article class="feature-card" id="requirements">
+                    <div class="feature-icon feature-icon-mobile">
+                        <i class="bi bi-phone-fill" aria-hidden="true"></i>
+                    </div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Use the generator comfortably from desktop, tablet, or mobile devices without friction.</p>
+                </article>
             </div>
         </div>
     </div>
-</div>
+</section>

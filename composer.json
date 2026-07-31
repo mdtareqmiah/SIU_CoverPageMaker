@@ -1,9 +1,9 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "mdtareqmiah/coverpagemaker",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "A Laravel 12 application for generating assignment and lab report cover page PDFs.",
+    "keywords": ["laravel", "cover-page", "pdf", "education", "generator"],
     "license": "MIT",
     "require": {
         "php": "^8.2",
@@ -72,6 +72,17 @@
         "laravel": {
             "dont-discover": []
         }
+    },
+    "authors": [
+        {
+            "name": "Md. Tareq Miah",
+            "email": "noreply@example.com"
+        }
+    ],
+    "homepage": "https://github.com/mdtareqmiah/coverpagemaker",
+    "support": {
+        "issues": "https://github.com/mdtareqmiah/coverpagemaker/issues",
+        "source": "https://github.com/mdtareqmiah/coverpagemaker"
     },
     "config": {
         "optimize-autoloader": true,

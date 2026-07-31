@@ -1,0 +1,47 @@
+/*
+|--------------------------------------------------------------------------
+| Home Page Styles
+|--------------------------------------------------------------------------
+|
+| This file contains homepage-specific styles for the hero section and
+| feature cards. It is loaded only on the home page.
+|
+*/
+
+/* Hero */
+#homeCarousel .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+#homeCarousel .carousel-caption {
+    top: 40%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+}
+
+.hero-text-shadow {
+    text-shadow: 8px 4px 12px rgba(0, 0, 0, 0.9);
+}
+
+/* Feature Cards */
+.feature-card {
+    transition: transform 0.3s;
+    border-radius: 15px;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}

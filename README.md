@@ -1,65 +1,42 @@
-# SIU Cover Page Generator
+# SIU Cover Page Maker
 
-[![PHP](https://img.shields.io/badge/php-%5E8.2-blue.svg)](https://www.php.net)
-[![Laravel](https://img.shields.io/badge/laravel-12.x-red.svg)](https://laravel.com)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+A Laravel-based Assignment & Lab Report Cover Page Generator for Sylhet International University.
 
-## Overview
+A professional and practical academic utility built to streamline assignment and lab report submission formatting for students and faculty.
 
-SIU Cover Page Generator is a Laravel-based application designed to generate professional assignment and lab report cover page PDFs with a clean form-driven workflow.
-
-## Problem Statement
-
-Many students and academic teams spend unnecessary time formatting cover pages for assignments and lab reports. Manual styling is error-prone and inconsistent across documents.
-
-## Solution
-
-This project provides a simple web interface to enter academic details, select a task type, and generate a polished PDF cover page instantly.
+---
 
 ## Features
 
-- Modern Laravel 12 architecture with Blade templates
-- Responsive form-based UI for assignment and lab report cover pages
-- Strong server-side validation for required fields and conditional inputs
-- PDF generation powered by `barryvdh/laravel-dompdf`
-- Vite asset pipeline for frontend resources
-- Automated feature tests for routes, validation, and PDF output
+- Assignment Cover Page Generation
+- Lab Report Cover Page Generation
+- Instant PDF Export
+- Official SIU Format
+- Responsive Interface
+- Form Validation
+- Clean UI
+- Print Ready PDF
+- Laravel Architecture
 
-## Technology Stack
+---
 
-| Layer | Technology |
+## Tech Stack
+
+| Technology | Usage |
 | --- | --- |
-| Backend | PHP 8.2, Laravel 12 |
-| Frontend | Blade, Bootstrap, Vite |
-| PDF | barryvdh/laravel-dompdf |
-| Testing | PHPUnit, Laravel Feature Tests |
-| Tooling | Composer, npm, Vite |
+| Laravel | Backend framework |
+| PHP | Server-side application logic |
+| Bootstrap 5 | Responsive UI styling |
+| HTML5 | Structure and markup |
+| CSS3 | Presentation and layout |
+| JavaScript | Frontend interactions |
+| DomPDF | PDF generation |
 
-## Architecture
-
-- MVC structure with dedicated controller, request validation, and views
-- `CoverPageMakerController` handles form display and PDF generation
-- `GenerateCoverPageRequest` enforces validation rules and custom error messages
-- Blade layout modularization keeps UI structure clean and maintainable
-
-## Screenshots
-
-- Home page hero section with Get Started CTA
-- Cover page generator form with conditional fields
-- PDF export workflow from user input to downloadable document
-
-> Screenshots can be added under a `screenshots/` directory for future releases.
+---
 
 ## Installation
 
-### Requirements
-
-- PHP 8.2 or higher
-- Composer
-- Node.js and npm
-- SQLite, MySQL, or compatible database
-
-### Setup
+Follow the steps below to set up the project locally.
 
 ```bash
 git clone https://github.com/mdtareqmiah/coverpagemaker.git
@@ -67,79 +44,112 @@ cd coverpagemaker
 composer install
 cp .env.example .env
 php artisan key:generate
+php artisan migrate
 npm install
 npm run build
-```
-
-### Run Locally
-
-```bash
 php artisan serve
 ```
 
-Visit `http://127.0.0.1:8000` to open the homepage.
-
-## Generate PDF
-
-1. Open `/form-page`
-2. Complete the form fields
-3. Click **Preview & Download PDF**
-4. The generated PDF is streamed in the browser
-
-## Testing
-
-Run the test suite with:
+Then open the app in your browser at:
 
 ```bash
-php artisan test
+http://127.0.0.1:8000
 ```
+
+---
+
+## Usage
+
+1. Open the application in the browser.
+2. Fill in the required cover page information.
+3. Select the assignment or lab report type.
+4. Click Generate PDF.
+5. Download the generated PDF file.
+
+---
+
+## Project Screenshots
+
+### 🏠 Home Page
+
+![Home Page](screenshots/home-page.png)
+
+---
+
+### 🏠 Home Page (Bottom)
+
+![Home Page Bottom](screenshots/home-page-down.png)
+
+---
+
+### 📝 Cover Page Form
+
+![Cover Page Form](screenshots/cover-page-form.png)
+
+---
+
+### 📝 Cover Page Form (Bottom)
+
+![Cover Page Form Bottom](screenshots/cover-page-form-down.png)
+
+---
+
+### 📄 Generated PDF
+
+![Generated PDF](screenshots/Report.png)
+
+---
 
 ## Project Structure
 
-| Folder | Purpose |
-| --- | --- |
-| `app/Http/Controllers` | Application controllers |
-| `app/Http/Requests` | Form request validation |
-| `resources/views` | Blade templates and partials |
-| `routes` | Application routing definitions |
-| `tests` | Automated feature tests |
-| `public` | Public web assets and build output |
+```text
+app/
+bootstrap/
+config/
+database/
+public/
+resources/
+routes/
+screenshots/
+tests/
+```
 
-## Folder Structure
-
-- `app/` - backend application code
-- `bootstrap/` - framework bootstrap files
-- `config/` - configuration settings
-- `database/` - migrations, seeders, factories
-- `public/` - entry point and frontend assets
-- `resources/` - views, CSS, JavaScript
-- `routes/` - HTTP route definitions
-- `storage/` - compiled templates, logs, caches
-- `tests/` - application test cases
+---
 
 ## Future Improvements
 
-- Add user authentication and profile management
-- Implement actual PDF preview before download
-- Add multilingual support
-- Introduce CI/CD workflow and release automation
-- Add accessibility audit reports and refinements
+- Multiple University Support
+- Custom Templates
+- Student History
+- QR Verification
+- Admin Dashboard
+- Dark Mode
+
+---
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+Contributions are welcome. If you would like to improve the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Make your changes.
+4. Submit a pull request with a clear description.
+
+---
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+MIT License
+
+---
 
 ## Author
 
 Md. Tareq Miah
 
-## Acknowledgements
+Laravel Backend Developer
 
-- Laravel Framework
-- Barryvdh Laravel DomPDF
-- Bootstrap
-- Vite
+GitHub: https://github.com/mdtareqmiah
+
+LinkedIn: https://www.linkedin.com/in/mdtareqmiah
